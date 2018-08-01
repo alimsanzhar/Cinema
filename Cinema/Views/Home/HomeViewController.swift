@@ -10,18 +10,34 @@ import UIKit
 
 class HomeViewController: UIViewController {
     private lazy var stateViewController = ContentStateViewController()
+    
+    lazy var viewModel: HomeViewModel = {
+        return HomeViewModel()
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         add(stateViewController)
     }
     
-    func loadMovies(){
-        
+    private func initViewModel(){
+        viewModel.showAlertClosure = { [weak self] in
+            DispatchQueue.main.async {
+                if let message = self?.viewModel.alertMessage {
+                    self?.render(message)
+                }
+            }
+        }
+        viewModel.reloadTableViewClosure = { [weak self] in
+            DispatchQueue.main.async {
+                self?.render((self?.viewModel)!)
+            }
+        }
+        viewModel.loadMovies()
     }
     
-    private func render(_ movies: [Movie]) {
-        let contentVC = HomeContentViewController(movies)
+    private func render(_ viewModel: HomeViewModel) {
+        let contentVC = HomeContentViewController(viewModel)
         stateViewController.transition(to: .render(contentVC))
     }
     
