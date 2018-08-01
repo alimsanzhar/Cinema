@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		040961B121105C0400566954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040961B021105C0400566954 /* AppDelegate.swift */; };
 		040961B321105C0400566954 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040961B221105C0400566954 /* HomeViewController.swift */; };
-		040961B621105C0400566954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040961B421105C0400566954 /* Main.storyboard */; };
 		040961B821105C0500566954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040961B721105C0500566954 /* Assets.xcassets */; };
 		040961BB21105C0500566954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040961B921105C0500566954 /* LaunchScreen.storyboard */; };
 		040961C621105C0500566954 /* CinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040961C521105C0500566954 /* CinemaTests.swift */; };
@@ -24,6 +23,12 @@
 		04164C562111908F0060E451 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C552111908F0060E451 /* Movie.swift */; };
 		04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C5821119CB50060E451 /* MovieDataProvider.swift */; };
 		04164C5C2111A15C0060E451 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C5B2111A15C0060E451 /* HomeViewModel.swift */; };
+		0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C083211197AE00BFBB78 /* TabBarController.swift */; };
+		0D49C08A21119D3600BFBB78 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08921119D3600BFBB78 /* ListViewController.swift */; };
+		0D49C08D21119D7D00BFBB78 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */; };
+		0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */; };
+		0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */; };
+		0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */; };
 		2330CE7798EDD0D70F7DF918 /* Pods_CinemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3E50E6F48B25FE42A69C1 /* Pods_CinemaUITests.framework */; };
 		7B2105AF853C9829FF0E940C /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7305C1B2E9AA271F5C72F64 /* Pods_Cinema.framework */; };
 		E26EA2653E416684ABBC52EF /* Pods_CinemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */; };
@@ -50,7 +55,6 @@
 		040961AD21105C0400566954 /* Cinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040961B021105C0400566954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040961B221105C0400566954 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		040961B521105C0400566954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040961B721105C0500566954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040961BA21105C0500566954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040961BC21105C0500566954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +74,12 @@
 		04164C552111908F0060E451 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04164C5821119CB50060E451 /* MovieDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
 		04164C5B2111A15C0060E451 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0D49C083211197AE00BFBB78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0D49C08921119D3600BFBB78 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackgroundColor.swift"; sourceTree = "<group>"; };
 		0E5ABA61A12958CB2544BFDE /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
 		7C5B8179EAF8B35310CDFDF8 /* Pods-CinemaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CinemaUITests/Pods-CinemaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +177,6 @@
 		040961DE21105C4800566954 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				040961B421105C0400566954 /* Main.storyboard */,
 				040961B721105C0500566954 /* Assets.xcassets */,
 				040961B921105C0500566954 /* LaunchScreen.storyboard */,
 				040961BC21105C0500566954 /* Info.plist */,
@@ -178,9 +187,11 @@
 		040961DF21105C7F00566954 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				040961B221105C0400566954 /* HomeViewController.swift */,
-				04164C51211181600060E451 /* HomeContentViewController.swift */,
+				0D49C082211197A100BFBB78 /* Root */,
 				04164C4C211180730060E451 /* States */,
+				0D49C08721119D0500BFBB78 /* Home */,
+				0D49C08821119D1400BFBB78 /* List */,
+				0D49C08B21119D6700BFBB78 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				04164C4A2110E58E0060E451 /* UIViewController+StateManagment.swift */,
+				0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */,
+				0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */,
+				0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +248,38 @@
 				04164C5B2111A15C0060E451 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
+		};
+		0D49C082211197A100BFBB78 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0D49C083211197AE00BFBB78 /* TabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0D49C08721119D0500BFBB78 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				040961B221105C0400566954 /* HomeViewController.swift */,
+				04164C51211181600060E451 /* HomeContentViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0D49C08821119D1400BFBB78 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				0D49C08921119D3600BFBB78 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		0D49C08B21119D6700BFBB78 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		D31637692F014211AE395750 /* Frameworks */ = {
@@ -370,7 +416,6 @@
 			files = (
 				040961BB21105C0500566954 /* LaunchScreen.storyboard in Resources */,
 				040961B821105C0500566954 /* Assets.xcassets in Resources */,
-				040961B621105C0400566954 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +447,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		7664F9B251B3DBEDDE7FED40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -496,14 +541,20 @@
 				04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */,
 				04164C4E211180D60060E451 /* LoadingViewController.swift in Sources */,
 				040961B321105C0400566954 /* HomeViewController.swift in Sources */,
+				0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */,
 				04164C4B2110E58E0060E451 /* UIViewController+StateManagment.swift in Sources */,
+				0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */,
 				04164C482110C44B0060E451 /* ContentStateViewController.swift in Sources */,
 				04164C562111908F0060E451 /* Movie.swift in Sources */,
 				04164C52211181600060E451 /* HomeContentViewController.swift in Sources */,
 				04164C5C2111A15C0060E451 /* HomeViewModel.swift in Sources */,
+				0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */,
+				0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */,
 				040961B121105C0400566954 /* AppDelegate.swift in Sources */,
+				0D49C08D21119D7D00BFBB78 /* SettingsViewController.swift in Sources */,
 				04164C50211181150060E451 /* ErrorViewController.swift in Sources */,
 				040961E3211060C800566954 /* Constants.swift in Sources */,
+				0D49C08A21119D3600BFBB78 /* ListViewController.swift in Sources */,
 				040961E52110612600566954 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,14 +591,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		040961B421105C0400566954 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040961B521105C0400566954 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		040961B921105C0500566954 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -681,7 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LF4R2PWGFJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Cinema/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,7 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LF4R2PWGFJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Cinema/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -720,7 +763,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF4R2PWGFJ;
+				DEVELOPMENT_TEAM = JS7SZYV8ND;
 				INFOPLIST_FILE = CinemaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -743,7 +786,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF4R2PWGFJ;
+				DEVELOPMENT_TEAM = JS7SZYV8ND;
 				INFOPLIST_FILE = CinemaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
