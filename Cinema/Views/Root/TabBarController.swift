@@ -24,17 +24,14 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.tabBarItems = generateTabBarItems()
         viewControllers = self.tabBarItems.compactMap { $0.controller }
         configureTabBarItems()
-        self.tabBar.tintColor = Colors.SECONDARY
+        self.tabBar.tintColor = .secondary
     }
 
     fileprivate func generateTabBarItems() -> [TabBarItem] {
         let homeNavigationController = UINavigationController(rootViewController: HomeViewController())
         let listNavigationController = UINavigationController(rootViewController: ListViewController())
-
-        homeNavigationController.navigationBar.isHidden = true
-        listNavigationController.navigationBar.isHidden = true
-
         let settingsViewController = SettingsViewController()
+
         return [
             TabBarItem(icon: #imageLiteral(resourceName: "home"), title: "Home", controller: homeNavigationController),
             TabBarItem(icon: #imageLiteral(resourceName: "list"), title: "List", controller: listNavigationController),

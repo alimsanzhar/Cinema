@@ -12,7 +12,10 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.PRIMARY
+        setPrimaryBackgroundColor()
+        setLargeTitle()
+        setNavigationBarTransparentBackground()
+        title = "Settings"
     }
 
 }
