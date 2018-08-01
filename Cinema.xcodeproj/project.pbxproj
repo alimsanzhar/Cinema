@@ -73,7 +73,7 @@
 		04164C51211181600060E451 /* HomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		04164C552111908F0060E451 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04164C5821119CB50060E451 /* MovieDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
-		04164C5B2111A15C0060E451 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		04164C5B2111A15C0060E451 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Cinema/ViewModels/HomeViewModel.swift; sourceTree = "<group>"; };
 		0D49C083211197AE00BFBB78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0D49C08921119D3600BFBB78 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -247,7 +247,9 @@
 			children = (
 				04164C5B2111A15C0060E451 /* HomeViewModel.swift */,
 			);
-			path = ViewModels;
+			name = ViewModels;
+			path = Cinema/ViewModels;
+			sourceTree = "<unknown>";
 		};
 		0D49C082211197A100BFBB78 /* Root */ = {
 			isa = PBXGroup;
