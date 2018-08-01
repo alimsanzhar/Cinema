@@ -9,6 +9,7 @@ target 'Cinema' do
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'Cartography', '~> 3.0'
   pod 'RealmSwift'
+  pod 'SwiftLint'
 
   target 'CinemaTests' do
     inherit! :search_paths

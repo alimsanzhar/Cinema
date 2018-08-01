@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable identifier_name
 struct Constants {
     struct Application {
         static let APP_NAME = "Cinema"
