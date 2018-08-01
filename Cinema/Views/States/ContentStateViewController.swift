@@ -12,15 +12,15 @@ import UIKit
 class ContentStateViewController: UIViewController {
     private var state: State?
     private var shownViewController: UIViewController?
-    
-    func transition(to newState: State){
+
+    func transition(to newState: State) {
         shownViewController?.remove()
-        let vc = viewController(for: newState)
-        add(vc)
-        shownViewController = vc
+        let incomingViewController = viewController(for: newState)
+        add(incomingViewController)
+        shownViewController = incomingViewController
         state = newState
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if state == nil {
@@ -48,9 +48,3 @@ extension ContentStateViewController {
         case render(UIViewController)
     }
 }
-
-
-
-
-
-
