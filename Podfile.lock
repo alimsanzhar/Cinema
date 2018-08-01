@@ -5,18 +5,10 @@ PODS:
     - ObjectMapper (~> 3.0)
   - Cartography (3.0.2)
   - ObjectMapper (3.3.0)
-  - Realm (3.7.4):
-    - Realm/Headers (= 3.7.4)
-  - Realm/Headers (3.7.4)
-  - RealmSwift (3.7.4):
-    - Realm (= 3.7.4)
-  - SwiftLint (0.25.1)
-
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
   - Cartography (~> 3.0)
   - RealmSwift
-  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
