@@ -9,10 +9,11 @@
 import UIKit
 
 class HomeContentViewController: UIViewController {
-    var movies: [Movie]?
-    init(_ movies: [Movie]) {
+    var viewModel: HomeViewModel
+    
+    init(_ viewModel: HomeViewModel) {
         super.init(nibName: nil, bundle: nil)
-        self.movies = movies
+        self.viewModel = viewModel
     }
 
     required init?(coder aDecoder: NSCoder) {
