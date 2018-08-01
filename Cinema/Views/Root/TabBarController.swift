@@ -23,14 +23,14 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         self.tabBarItems = generateTabBarItems()
         viewControllers = self.tabBarItems.compactMap { $0.controller }
+        configureTabBar()
         configureTabBarItems()
-        self.tabBar.tintColor = .secondary
     }
 
     fileprivate func generateTabBarItems() -> [TabBarItem] {
         let homeNavigationController = UINavigationController(rootViewController: HomeViewController())
         let listNavigationController = UINavigationController(rootViewController: ListViewController())
-        let settingsViewController = SettingsViewController()
+        let settingsViewController = UINavigationController(rootViewController: SettingsViewController())
 
         return [
             TabBarItem(icon: #imageLiteral(resourceName: "home"), title: "Home", controller: homeNavigationController),
@@ -45,6 +45,18 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
                             image: item.icon,
                             title: item.title)
         }
+    }
+
+    fileprivate func configureTabBar() {
+        tabBar.barTintColor = .primary
+        tabBar.tintColor = .secondary
+        tabBar.isTranslucent = false
+        tabBar.shadowImage = UIImage()
+        tabBar.backgroundImage = UIImage()
+        tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
+        tabBar.layer.shadowRadius = 8
+        tabBar.layer.shadowColor = UIColor.black.cgColor
+        tabBar.layer.shadowOpacity = 0.4
     }
 
     fileprivate func setUpTabBarItem(_ tabBarItem: UITabBarItem?, image: UIImage?, title: String?) {

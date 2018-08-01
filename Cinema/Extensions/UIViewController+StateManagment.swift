@@ -14,6 +14,7 @@ extension UIViewController {
         view.addSubview(child.view)
         child.didMove(toParentViewController: self)
     }
+    
     func remove() {
         guard parent != nil else {
             return
