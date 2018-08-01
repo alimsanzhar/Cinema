@@ -30,4 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         UIApplication.shared.statusBarStyle = .lightContent
     }
+
+    // MARK: - Status Bar Setup
+    fileprivate func configureStatusBar() {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
 }

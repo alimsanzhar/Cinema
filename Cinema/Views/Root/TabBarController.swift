@@ -10,14 +10,15 @@ import Foundation
 import UIKit
 
 struct TabBarItem {
-    var icon: UIImage?
-    var controller: UIViewController
+    let icon: UIImage
+    let title: String
+    let controller: UIViewController
 }
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
-    
+
     private var tabBarItems: [TabBarItem] = []
-    
+
     override func viewDidLoad() {
         self.delegate = self
         self.tabBarItems = generateTabBarItems()
@@ -29,24 +30,29 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     fileprivate func generateTabBarItems() -> [TabBarItem] {
         let homeNavigationController = UINavigationController(rootViewController: HomeViewController())
         let listNavigationController = UINavigationController(rootViewController: ListViewController())
+
+        homeNavigationController.navigationBar.isHidden = true
+        listNavigationController.navigationBar.isHidden = true
+
         let settingsViewController = SettingsViewController()
         return [
-            TabBarItem(icon: #imageLiteral(resourceName: "home"), controller: homeNavigationController),
-            TabBarItem(icon: #imageLiteral(resourceName: "list"), controller: listNavigationController),
-            TabBarItem(icon: #imageLiteral(resourceName: "settings"), controller: settingsViewController)
+            TabBarItem(icon: #imageLiteral(resourceName: "home"), title: "Home", controller: homeNavigationController),
+            TabBarItem(icon: #imageLiteral(resourceName: "list"), title: "List", controller: listNavigationController),
+            TabBarItem(icon: #imageLiteral(resourceName: "settings"), title: "Settings", controller: settingsViewController)
         ]
     }
 
     fileprivate func configureTabBarItems() {
         for (index, item) in self.tabBarItems.enumerated() {
             setUpTabBarItem(tabBar.items![index],
-                            image: item.icon)
+                            image: item.icon,
+                            title: item.title)
         }
     }
 
-    fileprivate func setUpTabBarItem(_ tabBarItem: UITabBarItem?, image: UIImage?) {
+    fileprivate func setUpTabBarItem(_ tabBarItem: UITabBarItem?, image: UIImage?, title: String?) {
         tabBarItem?.image = image
-        tabBarItem?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        tabBarItem?.title = title
     }
 
 }

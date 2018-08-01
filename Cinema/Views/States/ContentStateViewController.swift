@@ -20,7 +20,7 @@ class ContentStateViewController: UIViewController {
         shownViewController = incomingViewController
         state = newState
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if state == nil {
