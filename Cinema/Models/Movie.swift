@@ -12,5 +12,4 @@ struct Movie {
     let title: String?
     let subtitle: String?
     let description: String?
-    
 }

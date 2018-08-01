@@ -10,14 +10,13 @@ import UIKit
 
 class HomeContentViewController: UIViewController {
     var movies: [Movie]?
-    
     init(_ movies: [Movie]) {
         super.init(nibName: nil, bundle: nil)
         self.movies = movies
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 }
