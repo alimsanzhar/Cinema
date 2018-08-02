@@ -18,9 +18,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         add(stateViewController)
+        setupViewControllerStyle()
     }
     
-    private func initViewModel(){
+    private func initViewModel() {
         viewModel.showAlertClosure = { [weak self] in
             DispatchQueue.main.async {
                 if let message = self?.viewModel.alertMessage {
@@ -44,5 +45,11 @@ class HomeViewController: UIViewController {
     private func render(_ error: Error) {
         stateViewController.transition(to: .failed(error))
     }
+    
+    private func setupViewControllerStyle() {
+        setPrimaryBackgroundColor()
+        setLargeTitle()
+        setNavigationBarTransparentBackground()
+        title = Constants.Browse.TITLE
+    }
 }
-

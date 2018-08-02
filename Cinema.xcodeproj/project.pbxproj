@@ -22,7 +22,8 @@
 		04164C52211181600060E451 /* HomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C51211181600060E451 /* HomeContentViewController.swift */; };
 		04164C562111908F0060E451 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C552111908F0060E451 /* Movie.swift */; };
 		04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C5821119CB50060E451 /* MovieDataProvider.swift */; };
-		04164C5C2111A15C0060E451 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C5B2111A15C0060E451 /* HomeViewModel.swift */; };
+		04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1B7211210A300B9838F /* HomeViewModel.swift */; };
+		04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */; };
 		0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C083211197AE00BFBB78 /* TabBarController.swift */; };
 		0D49C08A21119D3600BFBB78 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08921119D3600BFBB78 /* ListViewController.swift */; };
 		0D49C08D21119D7D00BFBB78 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */; };
@@ -30,7 +31,7 @@
 		0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */; };
 		0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */; };
 		2330CE7798EDD0D70F7DF918 /* Pods_CinemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3E50E6F48B25FE42A69C1 /* Pods_CinemaUITests.framework */; };
-		7B2105AF853C9829FF0E940C /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7305C1B2E9AA271F5C72F64 /* Pods_Cinema.framework */; };
+		AC7E04D49659927B7DB5DF13 /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7305C1B2E9AA271F5C72F64 /* Pods_Cinema.framework */; };
 		E26EA2653E416684ABBC52EF /* Pods_CinemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +74,8 @@
 		04164C51211181600060E451 /* HomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		04164C552111908F0060E451 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04164C5821119CB50060E451 /* MovieDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
-		04164C5B2111A15C0060E451 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Cinema/ViewModels/HomeViewModel.swift; sourceTree = "<group>"; };
+		04E7C1B7211210A300B9838F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D49C083211197AE00BFBB78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0D49C08921119D3600BFBB78 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2105AF853C9829FF0E940C /* Pods_Cinema.framework in Frameworks */,
+				AC7E04D49659927B7DB5DF13 /* Pods_Cinema.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +148,9 @@
 			children = (
 				040961B021105C0400566954 /* AppDelegate.swift */,
 				04164C5721119B390060E451 /* Services */,
+				04E7C1B62112107D00B9838F /* ViewModels */,
 				04164C542111907E0060E451 /* Models */,
 				040961DF21105C7F00566954 /* Views */,
-				04164C5A2111A12E0060E451 /* ViewModels */,
 				04164C53211183510060E451 /* Extensions */,
 				040961E1211060A900566954 /* Utilities */,
 				040961DE21105C4800566954 /* Supporting Files */,
@@ -242,14 +244,31 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		04164C5A2111A12E0060E451 /* ViewModels */ = {
+		04E7C1B62112107D00B9838F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				04164C5B2111A15C0060E451 /* HomeViewModel.swift */,
+				04E7C1B7211210A300B9838F /* HomeViewModel.swift */,
 			);
 			name = ViewModels;
-			path = Cinema/ViewModels;
-			sourceTree = "<unknown>";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		04E7C1B92112C26B00B9838F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				040961B221105C0400566954 /* HomeViewController.swift */,
+				04164C51211181600060E451 /* HomeContentViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04E7C1BA2112C2B300B9838F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
 		};
 		0D49C082211197A100BFBB78 /* Root */ = {
 			isa = PBXGroup;
@@ -262,8 +281,8 @@
 		0D49C08721119D0500BFBB78 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				040961B221105C0400566954 /* HomeViewController.swift */,
-				04164C51211181600060E451 /* HomeContentViewController.swift */,
+				04E7C1B92112C26B00B9838F /* Views */,
+				04E7C1BA2112C2B300B9838F /* Cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -477,7 +496,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cinema/Pods-Cinema-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -486,7 +504,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -541,15 +558,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */,
+				04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */,
 				04164C4E211180D60060E451 /* LoadingViewController.swift in Sources */,
 				040961B321105C0400566954 /* HomeViewController.swift in Sources */,
 				0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */,
 				04164C4B2110E58E0060E451 /* UIViewController+StateManagment.swift in Sources */,
+				04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */,
 				0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */,
 				04164C482110C44B0060E451 /* ContentStateViewController.swift in Sources */,
 				04164C562111908F0060E451 /* Movie.swift in Sources */,
 				04164C52211181600060E451 /* HomeContentViewController.swift in Sources */,
-				04164C5C2111A15C0060E451 /* HomeViewModel.swift in Sources */,
 				0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */,
 				0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */,
 				040961B121105C0400566954 /* AppDelegate.swift in Sources */,
@@ -723,6 +741,7 @@
 			baseConfigurationReference = D9CFE0600B3DEBD0D07CAF62 /* Pods-Cinema.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LF4R2PWGFJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Cinema/Supporting Files/Info.plist";
@@ -733,6 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tl.Cinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -743,6 +763,7 @@
 			baseConfigurationReference = 0E5ABA61A12958CB2544BFDE /* Pods-Cinema.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LF4R2PWGFJ;
 				INFOPLIST_FILE = "$(SRCROOT)/Cinema/Supporting Files/Info.plist";
@@ -753,6 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tl.Cinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

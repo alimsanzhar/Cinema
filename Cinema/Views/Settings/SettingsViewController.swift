@@ -15,7 +15,6 @@ class SettingsViewController: UIViewController {
         setPrimaryBackgroundColor()
         setLargeTitle()
         setNavigationBarTransparentBackground()
-        title = "Settings"
+        title = Constants.Settings.TITLE
     }
-
 }

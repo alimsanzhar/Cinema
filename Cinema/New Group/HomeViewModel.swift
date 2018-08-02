@@ -8,42 +8,36 @@
 
 import UIKit
 
-struct PopularMoviesViewModel{
-    let id: Int
+struct PopularMoviesViewModel {
+    let movieId: Int
     let imagePath: String
 }
 
 class HomeViewModel {
-    
     let apiService: Service?
-    
     private var popularMovies: [Movie] = [Movie]() {
-        didSet{
+        didSet {
             self.reloadTableViewClosure?()
         }
     }
-    
     var isLoading: Bool = false {
         didSet {
             self.updateLoadingStatus?()
         }
     }
-    
     var alertMessage: Error? {
         didSet {
             self.showAlertClosure?()
         }
     }
-    
     var numberOfCells: Int {
         return popularMovies.count
     }
+    var reloadTableViewClosure: (() -> Void)?
+    var showAlertClosure: (() -> Void)?
+    var updateLoadingStatus: (() -> Void)?
     
-    var reloadTableViewClosure: (()->())?
-    var showAlertClosure: (()->())?
-    var updateLoadingStatus: (()->())?
-    
-    init(service: Service = MovieDataProvider()){
+    init(service: Service = MovieDataProvider()) {
         self.apiService = service
     }
     
@@ -62,14 +56,4 @@ class HomeViewModel {
     func getPopularCellViewModel(at indexPath: IndexPath) -> Movie {
         return popularMovies[indexPath.row]
     }
-    
-//    private func processFetchedMovies(movies: [Movie]) {
-//        self.movies = movies
-//        var fetchedMovies = [PopularMoviesViewModel]()
-//        for movie in movies {
-//            let processedMovie = PopularMoviesViewModel(id: movie.id, imagePath: movie.posterPath)
-//            fetchedMovies.append(processedMovie)
-//        }
-//        self.popularMovies = fetchedMovies
-//    }
 }
