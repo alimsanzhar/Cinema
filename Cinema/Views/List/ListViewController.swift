@@ -15,6 +15,6 @@ class ListViewController: UIViewController {
         setPrimaryBackgroundColor()
         setLargeTitle()
         setNavigationBarTransparentBackground()
-        title = "List"
+        title = Constants.List.TITLE
     }
 }
