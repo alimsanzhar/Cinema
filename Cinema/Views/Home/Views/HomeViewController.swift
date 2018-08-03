@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         add(stateViewController)
-        setupViewControllerStyle()
+        initViewModel()
     }
     
     private func initViewModel() {
@@ -44,12 +44,5 @@ class HomeViewController: UIViewController {
     
     private func render(_ error: Error) {
         stateViewController.transition(to: .failed(error))
-    }
-    
-    private func setupViewControllerStyle() {
-        setPrimaryBackgroundColor()
-        setLargeTitle()
-        setNavigationBarTransparentBackground()
-        title = Constants.Browse.TITLE
     }
 }

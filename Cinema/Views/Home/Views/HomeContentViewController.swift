@@ -10,7 +10,7 @@ import UIKit
 import Cartography
 
 class HomeContentViewController: UIViewController, Nameable {
-    var viewModel: HomeViewModel?
+    var viewModel: HomeViewModel!
     
     private lazy var filmCategoryLabel: UILabel = {
         let label = UILabel()
@@ -49,8 +49,16 @@ class HomeContentViewController: UIViewController, Nameable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewControllerStyle()
         setupViews()
-        setupConstraints()
+        setupConstraints()        
+    }
+    
+    private func setupViewControllerStyle() {
+        setPrimaryBackgroundColor()
+        setLargeTitle()
+        setNavigationBarTransparentBackground()
+        title = Constants.Browse.TITLE
     }
 
     func setupViews() {
@@ -75,7 +83,7 @@ class HomeContentViewController: UIViewController, Nameable {
 extension HomeContentViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (viewModel?.numberOfCells)!
+        return viewModel.numberOfCells
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
