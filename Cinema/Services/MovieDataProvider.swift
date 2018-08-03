@@ -19,11 +19,13 @@ class MovieDataProvider: Service {
         Alamofire.request(Constants.Services.FAVOURITE).responseJSON { response in
             switch response.result {
             case .success(let data):
-                guard let result = Mapper<Movie>().mapArray(JSONObject: data) else {
+                guard let data = data as? [String: Any], let results = data["results"] as? [[String: Any]] else {
                     return
                 }
+                let result = Mapper<Movie>().mapArray(JSONArray: results)
                 completionHandler(result, nil)
             case .failure(let error):
+                print(error)
                 completionHandler(nil, error)
             }
         }
