@@ -6,7 +6,8 @@ target 'Cinema' do
   use_frameworks!
 
   # Pods for Cinema
-  pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'ObjectMapper', '~> 3.3'
+  pod 'Alamofire'
   pod 'Cartography', '~> 3.0'
   pod 'RealmSwift'
   pod 'SwiftLint'
