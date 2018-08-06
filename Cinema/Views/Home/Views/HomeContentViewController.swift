@@ -12,20 +12,10 @@ import Cartography
 class HomeContentViewController: UIViewController, Nameable {
     var viewModel: HomeViewModel!
     
-    private lazy var filmCategoryLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = Constants.Browse.CATEGORY_TITLE
-        label.textColor = UIColor.white
-        return label
-    }()
-    
-    private lazy var seeAllButton: UIButton = {
-        let button = UIButton()
-        button.setTitle(Constants.Browse.SEE_ALL, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        button.setTitleColor(UIColor.secondary, for: .normal)
-        return button
+    private lazy var headerView: MVHeaderView = {
+        let view = MVHeaderView(labelTitle: Constants.Browse.TITLE, buttonTitle: Constants.Browse.SEE_ALL)
+        view.button.delegate = self
+        return view
     }()
     
     private lazy var flowLayout: UICollectionViewFlowLayout = {
@@ -55,16 +45,17 @@ class HomeContentViewController: UIViewController, Nameable {
     }
 
     func setupViews() {
-        [ filmCategoryLabel ].forEach {
+        [headerView].forEach {
             view.addSubview($0)
         }
     }
     
     func setupConstraints() {
-        constrain(view, filmCategoryLabel) { view, label in
-            label.top == view.top + 20
-            label.left == view.left + 25
-            label.height == 16
+        constrain (view, headerView) { view, header in
+            header.left == view.left + 25
+            header.right == view.right - 25
+            header.top == view.top + 10
+            header.height == 20
         }
     }
     
@@ -90,5 +81,11 @@ extension HomeContentViewController: UICollectionViewDelegateFlowLayout {
         let width = (self.view.frame.size.width - 50)/4 - 8
         let height = width + 12
         return CGSize(width: width, height: height)
+    }
+}
+
+extension HomeContentViewController: Pressable {
+    func buttonDidPress(_ button: UIButton) {
+        //
     }
 }

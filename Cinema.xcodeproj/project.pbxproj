@@ -22,6 +22,10 @@
 		04164C52211181600060E451 /* HomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C51211181600060E451 /* HomeContentViewController.swift */; };
 		04164C562111908F0060E451 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C552111908F0060E451 /* Movie.swift */; };
 		04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C5821119CB50060E451 /* MovieDataProvider.swift */; };
+		042704F92118143A0080E57A /* MVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704F82118143A0080E57A /* MVLabel.swift */; };
+		042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FA211815DF0080E57A /* UIFont+Custom.swift */; };
+		042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FC211844160080E57A /* MVSecondaryButton.swift */; };
+		042704FF211847190080E57A /* MVHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FE211847190080E57A /* MVHeaderView.swift */; };
 		04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1B7211210A300B9838F /* HomeViewModel.swift */; };
 		04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */; };
 		0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C083211197AE00BFBB78 /* TabBarController.swift */; };
@@ -74,6 +78,10 @@
 		04164C51211181600060E451 /* HomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		04164C552111908F0060E451 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04164C5821119CB50060E451 /* MovieDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
+		042704F82118143A0080E57A /* MVLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLabel.swift; sourceTree = "<group>"; };
+		042704FA211815DF0080E57A /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		042704FC211844160080E57A /* MVSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSecondaryButton.swift; sourceTree = "<group>"; };
+		042704FE211847190080E57A /* MVHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHeaderView.swift; sourceTree = "<group>"; };
 		04E7C1B7211210A300B9838F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D49C083211197AE00BFBB78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -194,6 +202,7 @@
 				0D49C08721119D0500BFBB78 /* Home */,
 				0D49C08821119D1400BFBB78 /* List */,
 				0D49C08B21119D6700BFBB78 /* Settings */,
+				042704F7211813580080E57A /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +233,7 @@
 				0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */,
 				0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */,
 				0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */,
+				042704FA211815DF0080E57A /* UIFont+Custom.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +252,16 @@
 				04164C5821119CB50060E451 /* MovieDataProvider.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		042704F7211813580080E57A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				042704F82118143A0080E57A /* MVLabel.swift */,
+				042704FC211844160080E57A /* MVSecondaryButton.swift */,
+				042704FE211847190080E57A /* MVHeaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		04E7C1B62112107D00B9838F /* ViewModels */ = {
@@ -558,6 +578,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */,
+				042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */,
+				042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */,
 				04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */,
 				04164C4E211180D60060E451 /* LoadingViewController.swift in Sources */,
 				040961B321105C0400566954 /* HomeViewController.swift in Sources */,
@@ -570,6 +592,8 @@
 				04164C52211181600060E451 /* HomeContentViewController.swift in Sources */,
 				0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */,
 				0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */,
+				042704FF211847190080E57A /* MVHeaderView.swift in Sources */,
+				042704F92118143A0080E57A /* MVLabel.swift in Sources */,
 				040961B121105C0400566954 /* AppDelegate.swift in Sources */,
 				0D49C08D21119D7D00BFBB78 /* SettingsViewController.swift in Sources */,
 				04164C50211181150060E451 /* ErrorViewController.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol Nameable {
     var identifier: String { get }
@@ -16,4 +17,10 @@ extension Nameable {
     var identifier: String {
         return String(describing: self)
     }
+}
+
+
+
+protocol Pressable: AnyObject {
+    func buttonDidPress(_ button: UIButton)
 }
