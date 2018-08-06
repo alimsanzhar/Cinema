@@ -25,7 +25,6 @@ class MovieDataProvider: Service {
                 let result = Mapper<Movie>().mapArray(JSONArray: results)
                 completionHandler(result, nil)
             case .failure(let error):
-                print(error)
                 completionHandler(nil, error)
             }
         }

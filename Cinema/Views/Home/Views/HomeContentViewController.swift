@@ -15,6 +15,7 @@ class HomeContentViewController: UIViewController, Nameable {
     private lazy var filmCategoryLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
+        label.text = Constants.Browse.CATEGORY_TITLE
         label.textColor = UIColor.white
         return label
     }()
@@ -49,16 +50,8 @@ class HomeContentViewController: UIViewController, Nameable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViewControllerStyle()
         setupViews()
-        setupConstraints()        
-    }
-    
-    private func setupViewControllerStyle() {
-        setPrimaryBackgroundColor()
-        setLargeTitle()
-        setNavigationBarTransparentBackground()
-        title = Constants.Browse.TITLE
+        setupConstraints()
     }
 
     func setupViews() {
@@ -69,7 +62,7 @@ class HomeContentViewController: UIViewController, Nameable {
     
     func setupConstraints() {
         constrain(view, filmCategoryLabel) { view, label in
-            label.top == view.top + 10
+            label.top == view.top + 20
             label.left == view.left + 25
             label.height == 16
         }
