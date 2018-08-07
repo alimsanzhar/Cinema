@@ -19,8 +19,6 @@ extension Nameable {
     }
 }
 
-
-
 protocol Pressable: AnyObject {
     func buttonDidPress(_ button: UIButton)
 }
