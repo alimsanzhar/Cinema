@@ -223,11 +223,9 @@
 		040961DF21105C7F00566954 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0D49C082211197A100BFBB78 /* Root */,
 				04164C4C211180730060E451 /* States */,
-				0D49C08721119D0500BFBB78 /* Home */,
-				0D49C08821119D1400BFBB78 /* List */,
-				0D49C08B21119D6700BFBB78 /* Settings */,
+				0427050521196DDB0080E57A /* Presentational */,
+				0D49C082211197A100BFBB78 /* Root */,
 				042704F7211813580080E57A /* Components */,
 			);
 			path = Views;
@@ -282,6 +280,16 @@
 				042705022118CDC20080E57A /* MVCollectionView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0427050521196DDB0080E57A /* Presentational */ = {
+			isa = PBXGroup;
+			children = (
+				0D49C08721119D0500BFBB78 /* Home */,
+				0D49C08821119D1400BFBB78 /* List */,
+				0D49C08B21119D6700BFBB78 /* Settings */,
+			);
+			path = Presentational;
 			sourceTree = "<group>";
 		};
 		04E7C1B62112107D00B9838F /* ViewModels */ = {
@@ -596,6 +604,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cinema/Pods-Cinema-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -604,6 +613,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",

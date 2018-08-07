@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  ListViewController.swift
 //  Cinema
 //
 //  Created by Beknar Danabek on 01/08/2018.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setPrimaryBackgroundColor()
         setLargeTitle()
         setNavigationBarTransparentBackground()
-        title = Constants.Settings.TITLE
+        title = Constants.List.title
     }
 }

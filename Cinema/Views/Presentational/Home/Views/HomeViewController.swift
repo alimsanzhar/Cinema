@@ -51,6 +51,6 @@ class HomeViewController: UIViewController {
         setNavigationBarTransparentBackground()
         setPrimaryBackgroundColor()
         setLargeTitle()
-        title = Constants.Browse.TITLE
+        title = Constants.Browse.title
     }
 }
