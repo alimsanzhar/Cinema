@@ -182,7 +182,6 @@
 			children = (
 				040961B021105C0400566954 /* AppDelegate.swift */,
 				0DF1DC5A2119652400AC1981 /* Managers */,
-				0DE19AA42118D87000422B44 /* Services */,
 				04E7C1B62112107D00B9838F /* ViewModels */,
 				04164C542111907E0060E451 /* Models */,
 				040961DF21105C7F00566954 /* Views */,
@@ -393,14 +392,6 @@
 				0DE19AA22118D5AC00422B44 /* Result.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		0DE19AA42118D87000422B44 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Services;
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		0DF1DC5A2119652400AC1981 /* Managers */ = {
