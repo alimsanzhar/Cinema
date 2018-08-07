@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import Kingfisher
 
 class HomeContentViewController: UIViewController, Nameable {
     var viewModel: HomeViewModel!
@@ -18,7 +19,7 @@ class HomeContentViewController: UIViewController, Nameable {
     }()
     
     private lazy var headerView: MVHeaderView = {
-        let view = MVHeaderView(labelTitle: Constants.Browse.CATEGORY_TITLE, buttonTitle: Constants.Browse.SEE_ALL)
+        let view = MVHeaderView(labelTitle: Constants.Browse.categoryTitle, buttonTitle: Constants.Browse.seeAll)
         view.button.delegate = self
         return view
     }()
@@ -52,7 +53,7 @@ class HomeContentViewController: UIViewController, Nameable {
     }
 
     func setupViews() {
-        [separatorLine, headerView].forEach {
+        [separatorLine, headerView, collectionView].forEach {
             view.addSubview($0)
         }
     }
@@ -70,6 +71,12 @@ class HomeContentViewController: UIViewController, Nameable {
             header.top == view.top + 10
             header.height == 20
         }
+        constrain(headerView, collectionView) { view, collectionView in
+            collectionView.top == view.bottom + 12
+            collectionView.width == view.width
+            collectionView.centerX == view.centerX
+            collectionView.height == 100
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -85,7 +92,8 @@ extension HomeContentViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! HomeCollectionViewCell
-        let cellViewModel = viewModel.getPopularCellViewModel(at: indexPath)
+        let cellViewModel = viewModel.getCellViewModel(at: indexPath)
+        cell.movieImageView.kf.setImage(with: URL(string: cellViewModel.imagePath))
         return cell
     }
 }

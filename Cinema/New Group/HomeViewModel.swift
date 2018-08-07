@@ -8,8 +8,7 @@
 
 import UIKit
 
-struct PopularMoviesViewModel {
-    let id: Int
+struct MoviePoster {
     let imagePath: String
 }
 
@@ -17,11 +16,14 @@ class HomeViewModel {
     
     var networkManager: NetworkManager!
     
-    private var popularMovies: [Movie] = [Movie]() {
+    private var popularMovies: [Movie] = [Movie]()
+    
+    private var moviePosters: [MoviePoster] = [MoviePoster]() {
         didSet {
             self.reloadTableViewClosure?()
         }
     }
+    
     var isLoading: Bool = false {
         didSet {
             self.updateLoadingStatus?()
@@ -33,7 +35,7 @@ class HomeViewModel {
         }
     }
     var numberOfCells: Int {
-        return popularMovies.count
+        return moviePosters.count
     }
     var reloadTableViewClosure: (() -> Void)?
     var showAlertClosure: (() -> Void)?
@@ -50,12 +52,25 @@ class HomeViewModel {
             if let error = error {
                 self?.alertMessage = error
             } else {
-                self?.popularMovies = movies!
+                self?.processMoviePosters(movies: movies!)
             }
         }
     }
     
-    func getPopularCellViewModel(at indexPath: IndexPath) -> Movie {
-        return popularMovies[indexPath.row]
+    func processMoviePosters(movies: [Movie]) {
+        self.popularMovies = movies
+        var posters = [MoviePoster]()
+        for movie in movies {
+            guard let path = movie.posterPath else {
+                return
+            }
+            print("\(Constants.Links.imagePath)\(String(describing: path))")
+            posters.append(MoviePoster(imagePath: "\(Constants.Links.imagePath)\(String(describing: path))"))
+        }
+        self.moviePosters = posters
+    }
+    
+    func getCellViewModel(at indexPath: IndexPath) -> MoviePoster {
+        return moviePosters[indexPath.row]
     }
 }

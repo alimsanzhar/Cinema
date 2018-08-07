@@ -11,6 +11,7 @@ target 'Cinema' do
   pod 'Cartography', '~> 3.0'
   pod 'RealmSwift'
   pod 'SwiftLint'
+  pod 'Kingfisher'
 
   target 'CinemaTests' do
     inherit! :search_paths
