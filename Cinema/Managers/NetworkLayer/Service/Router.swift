@@ -71,8 +71,4 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
     func cancel() {
         self.task?.cancel()
     }
-    
-    
-    
-    
 }

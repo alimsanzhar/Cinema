@@ -21,7 +21,8 @@ extension MovieApi: EndPointType {
     
     var environmentBaseURL: String {
         switch NetworkManager.environment {
-            case .production: return "https://api.themoviedb.org/3/movie/"
+        case .production:
+            return "https://api.themoviedb.org/3/movie/"
         }
     }
     
@@ -48,7 +49,7 @@ extension MovieApi: EndPointType {
         case .popular:
             return .requestWithParameters(bodyParameters: nil,
                                       urlParameters: ["api_key": NetworkManager.apiKey,
-                                                      "language":"en"])
+                                                      "language": "en"])
         default:
             return .request
         }
@@ -58,4 +59,3 @@ extension MovieApi: EndPointType {
         return nil
     }
 }
-

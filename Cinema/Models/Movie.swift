@@ -60,7 +60,6 @@ extension Movie: Decodable {
         case overview
     }
     
-    
     init(from decoder: Decoder) throws {
         let movieContainer = try decoder.container(keyedBy: MovieCodingKeys.self)
         id = try movieContainer.decode(Int.self, forKey: .id)
