@@ -34,8 +34,6 @@ class HomeContentViewController: UIViewController, Nameable {
     private lazy var collectionView: MVCollectionView = {
         let collectionView = MVCollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
-        collectionView.width = (self.view.frame.size.width - 36)/4 - 8
-        collectionView.height = collectionView.width + 20
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -71,11 +69,11 @@ class HomeContentViewController: UIViewController, Nameable {
             header.top == view.top + 10
             header.height == 20
         }
-        constrain(headerView, collectionView) { view, collectionView in
-            collectionView.top == view.bottom + 12
-            collectionView.width == view.width
-            collectionView.centerX == view.centerX
-            collectionView.height == 100
+        constrain(headerView, collectionView, view) { header, collectionView, main in
+            collectionView.top == header.bottom + 12
+            collectionView.left == main.left + 18
+            collectionView.right == main.right - 18
+            collectionView.height == 110
         }
     }
     
@@ -95,6 +93,14 @@ extension HomeContentViewController: UICollectionViewDelegate, UICollectionViewD
         let cellViewModel = viewModel.getCellViewModel(at: indexPath)
         cell.movieImageView.kf.setImage(with: URL(string: cellViewModel.imagePath))
         return cell
+    }
+}
+
+extension HomeContentViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (self.view.frame.width - 36)/4 - 8
+        let height = width + 12
+        return CGSize(width: width, height: height)
     }
 }
 

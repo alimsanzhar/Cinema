@@ -13,17 +13,19 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     lazy var supportingView: UIView = {
         let view = UIView()
-        view.layer.masksToBounds = false
-        view.layer.cornerRadius = 5
+        view.clipsToBounds = false
         view.layer.shadowRadius = 5
-        view.layer.shadowOpacity = 0.1
+        view.layer.shadowOpacity = 0.3
         view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOffset = CGSize(width: 0, height: 2)
+        view.layer.shadowOffset = CGSize(width: 0, height: 1)
         return view
     }()
     
     lazy var movieImageView: UIImageView = {
-        let imageView = UIImageView()
+        let imageView = UIImageView(frame: supportingView.bounds)
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 5
         return imageView
     }()
     
@@ -39,7 +41,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     func setupConstraints() {
-        constrain(contentView, supportingView) { main, extra in
+        constrain(self, supportingView) { main, extra in
             extra.edges == main.edges
         }
         constrain(supportingView, movieImageView) { main, extra in
