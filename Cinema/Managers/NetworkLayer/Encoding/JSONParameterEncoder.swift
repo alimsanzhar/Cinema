@@ -20,6 +20,4 @@ public struct JSONParameterEncoder: ParameterEncoder {
             throw NetworkError.encodingFailed
         }
     }
-    
-    
 }

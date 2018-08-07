@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		040961B121105C0400566954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040961B021105C0400566954 /* AppDelegate.swift */; };
-		040961B321105C0400566954 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040961B221105C0400566954 /* HomeViewController.swift */; };
 		040961B821105C0500566954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040961B721105C0500566954 /* Assets.xcassets */; };
 		040961BB21105C0500566954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040961B921105C0500566954 /* LaunchScreen.storyboard */; };
 		040961C621105C0500566954 /* CinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040961C521105C0500566954 /* CinemaTests.swift */; };
@@ -35,6 +34,7 @@
 		0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */; };
 		0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */; };
 		0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */; };
+		0D914C4021197E4700B6CC1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D914C3F21197E4700B6CC1B /* HomeViewController.swift */; };
 		0DE19A872118C19E00422B44 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A862118C19E00422B44 /* EndPointType.swift */; };
 		0DE19A8A2118C1C000422B44 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A892118C1C000422B44 /* HTTPMethod.swift */; };
 		0DE19A8C2118C21F00422B44 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A8B2118C21F00422B44 /* HTTPTask.swift */; };
@@ -47,6 +47,7 @@
 		0DE19A9F2118D4A400422B44 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A9E2118D4A400422B44 /* NetworkManager.swift */; };
 		0DE19AA12118D53100422B44 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19AA02118D53100422B44 /* NetworkResponse.swift */; };
 		0DE19AA32118D5AC00422B44 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19AA22118D5AC00422B44 /* Result.swift */; };
+		0DF1DC5C21196FAE00AC1981 /* UIViewController+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1DC5B21196FAE00AC1981 /* UIViewController+Injection.swift */; };
 		2330CE7798EDD0D70F7DF918 /* Pods_CinemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3E50E6F48B25FE42A69C1 /* Pods_CinemaUITests.framework */; };
 		AC7E04D49659927B7DB5DF13 /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7305C1B2E9AA271F5C72F64 /* Pods_Cinema.framework */; };
 		E26EA2653E416684ABBC52EF /* Pods_CinemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */; };
@@ -72,7 +73,6 @@
 /* Begin PBXFileReference section */
 		040961AD21105C0400566954 /* Cinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040961B021105C0400566954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		040961B221105C0400566954 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		040961B721105C0500566954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040961BA21105C0500566954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040961BC21105C0500566954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 		0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackgroundColor.swift"; sourceTree = "<group>"; };
+		0D914C3F21197E4700B6CC1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0DE19A862118C19E00422B44 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		0DE19A892118C1C000422B44 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		0DE19A8B2118C21F00422B44 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		0DE19A9E2118D4A400422B44 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0DE19AA02118D53100422B44 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		0DE19AA22118D5AC00422B44 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		0DF1DC5B21196FAE00AC1981 /* UIViewController+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Injection.swift"; sourceTree = "<group>"; };
 		0E5ABA61A12958CB2544BFDE /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
 		7C5B8179EAF8B35310CDFDF8 /* Pods-CinemaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CinemaUITests/Pods-CinemaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +260,7 @@
 				0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */,
 				0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */,
 				042704FA211815DF0080E57A /* UIFont+Custom.swift */,
+				0DF1DC5B21196FAE00AC1981 /* UIViewController+Injection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,7 +307,7 @@
 		04E7C1B92112C26B00B9838F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				040961B221105C0400566954 /* HomeViewController.swift */,
+				0D914C3F21197E4700B6CC1B /* HomeViewController.swift */,
 				04164C51211181600060E451 /* HomeContentViewController.swift */,
 			);
 			path = Views;
@@ -672,8 +675,8 @@
 				042705012118C4490080E57A /* MVSeparatorLine.swift in Sources */,
 				0DE19A912118C3E400422B44 /* URLParameterEncoder.swift in Sources */,
 				0DE19A972118C7A000422B44 /* Router.swift in Sources */,
+				0D914C4021197E4700B6CC1B /* HomeViewController.swift in Sources */,
 				04164C4E211180D60060E451 /* LoadingViewController.swift in Sources */,
-				040961B321105C0400566954 /* HomeViewController.swift in Sources */,
 				0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */,
 				04164C4B2110E58E0060E451 /* UIViewController+StateManagment.swift in Sources */,
 				0DE19A8A2118C1C000422B44 /* HTTPMethod.swift in Sources */,
@@ -681,6 +684,7 @@
 				0DE19A872118C19E00422B44 /* EndPointType.swift in Sources */,
 				04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */,
 				0DE19A932118C57A00422B44 /* JSONParameterEncoder.swift in Sources */,
+				0DF1DC5C21196FAE00AC1981 /* UIViewController+Injection.swift in Sources */,
 				0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */,
 				0DE19A9F2118D4A400422B44 /* NetworkManager.swift in Sources */,
 				0DE19A9A2118CD4D00422B44 /* MovieEndPoint.swift in Sources */,

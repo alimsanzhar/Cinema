@@ -23,7 +23,6 @@ struct NetworkManager {
         }
     }
 
-    
     func getPopularMovies(completion: @escaping (_ movies: [Movie]?, _ error: Error?) -> Void) {
         router.request(.popular) { data, response, error in
             if error != nil {
