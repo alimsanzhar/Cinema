@@ -21,7 +21,6 @@
 		04164C50211181150060E451 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C4F211181150060E451 /* ErrorViewController.swift */; };
 		04164C52211181600060E451 /* HomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C51211181600060E451 /* HomeContentViewController.swift */; };
 		04164C562111908F0060E451 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C552111908F0060E451 /* Movie.swift */; };
-		04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C5821119CB50060E451 /* MovieDataProvider.swift */; };
 		042704F92118143A0080E57A /* MVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704F82118143A0080E57A /* MVLabel.swift */; };
 		042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FA211815DF0080E57A /* UIFont+Custom.swift */; };
 		042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FC211844160080E57A /* MVSecondaryButton.swift */; };
@@ -34,6 +33,18 @@
 		0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */; };
 		0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */; };
 		0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */; };
+		0DE19A872118C19E00422B44 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A862118C19E00422B44 /* EndPointType.swift */; };
+		0DE19A8A2118C1C000422B44 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A892118C1C000422B44 /* HTTPMethod.swift */; };
+		0DE19A8C2118C21F00422B44 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A8B2118C21F00422B44 /* HTTPTask.swift */; };
+		0DE19A8F2118C2AC00422B44 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A8E2118C2AC00422B44 /* ParameterEncoding.swift */; };
+		0DE19A912118C3E400422B44 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A902118C3E400422B44 /* URLParameterEncoder.swift */; };
+		0DE19A932118C57A00422B44 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A922118C57A00422B44 /* JSONParameterEncoder.swift */; };
+		0DE19A952118C67D00422B44 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A942118C67D00422B44 /* NetworkRouter.swift */; };
+		0DE19A972118C7A000422B44 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A962118C7A000422B44 /* Router.swift */; };
+		0DE19A9A2118CD4D00422B44 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A992118CD4D00422B44 /* MovieEndPoint.swift */; };
+		0DE19A9F2118D4A400422B44 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19A9E2118D4A400422B44 /* NetworkManager.swift */; };
+		0DE19AA12118D53100422B44 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19AA02118D53100422B44 /* NetworkResponse.swift */; };
+		0DE19AA32118D5AC00422B44 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE19AA22118D5AC00422B44 /* Result.swift */; };
 		2330CE7798EDD0D70F7DF918 /* Pods_CinemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3E50E6F48B25FE42A69C1 /* Pods_CinemaUITests.framework */; };
 		AC7E04D49659927B7DB5DF13 /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7305C1B2E9AA271F5C72F64 /* Pods_Cinema.framework */; };
 		E26EA2653E416684ABBC52EF /* Pods_CinemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */; };
@@ -77,7 +88,6 @@
 		04164C4F211181150060E451 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		04164C51211181600060E451 /* HomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		04164C552111908F0060E451 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		04164C5821119CB50060E451 /* MovieDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
 		042704F82118143A0080E57A /* MVLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLabel.swift; sourceTree = "<group>"; };
 		042704FA211815DF0080E57A /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		042704FC211844160080E57A /* MVSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSecondaryButton.swift; sourceTree = "<group>"; };
@@ -90,6 +100,18 @@
 		0D49C08E2111AA8C00BFBB78 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		0D49C0902111ABB100BFBB78 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		0D49C0922111AD0100BFBB78 /* UIViewController+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackgroundColor.swift"; sourceTree = "<group>"; };
+		0DE19A862118C19E00422B44 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		0DE19A892118C1C000422B44 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0DE19A8B2118C21F00422B44 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		0DE19A8E2118C2AC00422B44 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		0DE19A902118C3E400422B44 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		0DE19A922118C57A00422B44 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		0DE19A942118C67D00422B44 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		0DE19A962118C7A000422B44 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0DE19A992118CD4D00422B44 /* MovieEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		0DE19A9E2118D4A400422B44 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0DE19AA02118D53100422B44 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		0DE19AA22118D5AC00422B44 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0E5ABA61A12958CB2544BFDE /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
 		7C5B8179EAF8B35310CDFDF8 /* Pods-CinemaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CinemaUITests/Pods-CinemaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8470B23A0898EA90CCF8AE /* Pods_CinemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				040961B021105C0400566954 /* AppDelegate.swift */,
-				04164C5721119B390060E451 /* Services */,
+				0DF1DC5A2119652400AC1981 /* Managers */,
+				0DE19AA42118D87000422B44 /* Services */,
 				04E7C1B62112107D00B9838F /* ViewModels */,
 				04164C542111907E0060E451 /* Models */,
 				040961DF21105C7F00566954 /* Views */,
@@ -246,14 +269,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		04164C5721119B390060E451 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				04164C5821119CB50060E451 /* MovieDataProvider.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		042704F7211813580080E57A /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +336,73 @@
 				0D49C08C21119D7D00BFBB78 /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		0DE19A852118C18700422B44 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0DE19A9D2118D49800422B44 /* Manager */,
+				0DE19A982118CD3800422B44 /* EndPoint */,
+				0DE19A8D2118C29500422B44 /* Encoding */,
+				0DE19A882118C1A900422B44 /* Service */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		0DE19A882118C1A900422B44 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0DE19A862118C19E00422B44 /* EndPointType.swift */,
+				0DE19A892118C1C000422B44 /* HTTPMethod.swift */,
+				0DE19A8B2118C21F00422B44 /* HTTPTask.swift */,
+				0DE19A942118C67D00422B44 /* NetworkRouter.swift */,
+				0DE19A962118C7A000422B44 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0DE19A8D2118C29500422B44 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				0DE19A8E2118C2AC00422B44 /* ParameterEncoding.swift */,
+				0DE19A902118C3E400422B44 /* URLParameterEncoder.swift */,
+				0DE19A922118C57A00422B44 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		0DE19A982118CD3800422B44 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				0DE19A992118CD4D00422B44 /* MovieEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		0DE19A9D2118D49800422B44 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0DE19A9E2118D4A400422B44 /* NetworkManager.swift */,
+				0DE19AA02118D53100422B44 /* NetworkResponse.swift */,
+				0DE19AA22118D5AC00422B44 /* Result.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0DE19AA42118D87000422B44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		0DF1DC5A2119652400AC1981 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0DE19A852118C18700422B44 /* NetworkLayer */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		D31637692F014211AE395750 /* Frameworks */ = {
@@ -577,25 +659,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04164C5921119CB50060E451 /* MovieDataProvider.swift in Sources */,
 				042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */,
 				042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */,
 				04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */,
+				0DE19A912118C3E400422B44 /* URLParameterEncoder.swift in Sources */,
+				0DE19A972118C7A000422B44 /* Router.swift in Sources */,
 				04164C4E211180D60060E451 /* LoadingViewController.swift in Sources */,
 				040961B321105C0400566954 /* HomeViewController.swift in Sources */,
 				0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */,
 				04164C4B2110E58E0060E451 /* UIViewController+StateManagment.swift in Sources */,
+				0DE19A8A2118C1C000422B44 /* HTTPMethod.swift in Sources */,
+				0DE19AA32118D5AC00422B44 /* Result.swift in Sources */,
+				0DE19A872118C19E00422B44 /* EndPointType.swift in Sources */,
 				04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */,
+				0DE19A932118C57A00422B44 /* JSONParameterEncoder.swift in Sources */,
 				0D49C0912111ABB100BFBB78 /* UIViewController+NavigationBar.swift in Sources */,
+				0DE19A9F2118D4A400422B44 /* NetworkManager.swift in Sources */,
+				0DE19A9A2118CD4D00422B44 /* MovieEndPoint.swift in Sources */,
 				04164C482110C44B0060E451 /* ContentStateViewController.swift in Sources */,
 				04164C562111908F0060E451 /* Movie.swift in Sources */,
 				04164C52211181600060E451 /* HomeContentViewController.swift in Sources */,
+				0DE19A952118C67D00422B44 /* NetworkRouter.swift in Sources */,
 				0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */,
 				0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */,
 				042704FF211847190080E57A /* MVHeaderView.swift in Sources */,
+				0DE19A8F2118C2AC00422B44 /* ParameterEncoding.swift in Sources */,
+				0DE19A8C2118C21F00422B44 /* HTTPTask.swift in Sources */,
 				042704F92118143A0080E57A /* MVLabel.swift in Sources */,
 				040961B121105C0400566954 /* AppDelegate.swift in Sources */,
 				0D49C08D21119D7D00BFBB78 /* SettingsViewController.swift in Sources */,
+				0DE19AA12118D53100422B44 /* NetworkResponse.swift in Sources */,
 				04164C50211181150060E451 /* ErrorViewController.swift in Sources */,
 				040961E3211060C800566954 /* Constants.swift in Sources */,
 				0D49C08A21119D3600BFBB78 /* ListViewController.swift in Sources */,

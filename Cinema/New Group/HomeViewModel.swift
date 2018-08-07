@@ -9,12 +9,14 @@
 import UIKit
 
 struct PopularMoviesViewModel {
-    let movieId: Int
+    let id: Int
     let imagePath: String
 }
 
 class HomeViewModel {
-    let apiService: Service?
+    
+    var networkManager: NetworkManager!
+    
     private var popularMovies: [Movie] = [Movie]() {
         didSet {
             self.reloadTableViewClosure?()
@@ -37,14 +39,14 @@ class HomeViewModel {
     var showAlertClosure: (() -> Void)?
     var updateLoadingStatus: (() -> Void)?
     
-    init(service: Service = MovieDataProvider()) {
-        self.apiService = service
+    init(networkManager: NetworkManager = NetworkManager()) {
+        self.networkManager = networkManager
     }
     
     func loadMovies() {
         self.isLoading = true
-        apiService?.fetchMovies { [weak self] (movies, error) in
-            self?.isLoading = false
+        
+        networkManager.getPopularMovies { [weak self] movies, error  in
             if let error = error {
                 self?.alertMessage = error
             } else {
