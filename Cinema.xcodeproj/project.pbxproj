@@ -25,6 +25,8 @@
 		042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FA211815DF0080E57A /* UIFont+Custom.swift */; };
 		042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FC211844160080E57A /* MVSecondaryButton.swift */; };
 		042704FF211847190080E57A /* MVHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FE211847190080E57A /* MVHeaderView.swift */; };
+		042705012118C4490080E57A /* MVSeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042705002118C4490080E57A /* MVSeparatorLine.swift */; };
+		042705032118CDC20080E57A /* MVCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042705022118CDC20080E57A /* MVCollectionView.swift */; };
 		04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1B7211210A300B9838F /* HomeViewModel.swift */; };
 		04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */; };
 		0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C083211197AE00BFBB78 /* TabBarController.swift */; };
@@ -92,6 +94,8 @@
 		042704FA211815DF0080E57A /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		042704FC211844160080E57A /* MVSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSecondaryButton.swift; sourceTree = "<group>"; };
 		042704FE211847190080E57A /* MVHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHeaderView.swift; sourceTree = "<group>"; };
+		042705002118C4490080E57A /* MVSeparatorLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSeparatorLine.swift; sourceTree = "<group>"; };
+		042705022118CDC20080E57A /* MVCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCollectionView.swift; sourceTree = "<group>"; };
 		04E7C1B7211210A300B9838F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D49C083211197AE00BFBB78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -178,7 +182,6 @@
 			children = (
 				040961B021105C0400566954 /* AppDelegate.swift */,
 				0DF1DC5A2119652400AC1981 /* Managers */,
-				0DE19AA42118D87000422B44 /* Services */,
 				04E7C1B62112107D00B9838F /* ViewModels */,
 				04164C542111907E0060E451 /* Models */,
 				040961DF21105C7F00566954 /* Views */,
@@ -275,6 +278,8 @@
 				042704F82118143A0080E57A /* MVLabel.swift */,
 				042704FC211844160080E57A /* MVSecondaryButton.swift */,
 				042704FE211847190080E57A /* MVHeaderView.swift */,
+				042705002118C4490080E57A /* MVSeparatorLine.swift */,
+				042705022118CDC20080E57A /* MVCollectionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -387,14 +392,6 @@
 				0DE19AA22118D5AC00422B44 /* Result.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		0DE19AA42118D87000422B44 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Services;
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		0DF1DC5A2119652400AC1981 /* Managers */ = {
@@ -662,6 +659,7 @@
 				042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */,
 				042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */,
 				04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */,
+				042705012118C4490080E57A /* MVSeparatorLine.swift in Sources */,
 				0DE19A912118C3E400422B44 /* URLParameterEncoder.swift in Sources */,
 				0DE19A972118C7A000422B44 /* Router.swift in Sources */,
 				04164C4E211180D60060E451 /* LoadingViewController.swift in Sources */,
@@ -692,6 +690,7 @@
 				04164C50211181150060E451 /* ErrorViewController.swift in Sources */,
 				040961E3211060C800566954 /* Constants.swift in Sources */,
 				0D49C08A21119D3600BFBB78 /* ListViewController.swift in Sources */,
+				042705032118CDC20080E57A /* MVCollectionView.swift in Sources */,
 				040961E52110612600566954 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
