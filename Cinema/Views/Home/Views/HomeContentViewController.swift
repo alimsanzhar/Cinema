@@ -12,8 +12,13 @@ import Cartography
 class HomeContentViewController: UIViewController, Nameable {
     var viewModel: HomeViewModel!
     
+    private lazy var separatorLine: MVSeparatorLine = {
+        let line = MVSeparatorLine()
+        return line
+    }()
+    
     private lazy var headerView: MVHeaderView = {
-        let view = MVHeaderView(labelTitle: Constants.Browse.TITLE, buttonTitle: Constants.Browse.SEE_ALL)
+        let view = MVHeaderView(labelTitle: Constants.Browse.CATEGORY_TITLE, buttonTitle: Constants.Browse.SEE_ALL)
         view.button.delegate = self
         return view
     }()
@@ -25,11 +30,13 @@ class HomeContentViewController: UIViewController, Nameable {
         return layout
     }()
     
-    private lazy var collectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+    private lazy var collectionView: MVCollectionView = {
+        let collectionView = MVCollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
+        collectionView.width = (self.view.frame.size.width - 36)/4 - 8
+        collectionView.height = collectionView.width + 20
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
         return collectionView
     }()
 
@@ -45,15 +52,21 @@ class HomeContentViewController: UIViewController, Nameable {
     }
 
     func setupViews() {
-        [headerView].forEach {
+        [separatorLine, headerView].forEach {
             view.addSubview($0)
         }
     }
     
     func setupConstraints() {
-        constrain (view, headerView) { view, header in
-            header.left == view.left + 25
-            header.right == view.right - 25
+        constrain(view, separatorLine) { view, line in
+            line.top == view.top
+            line.height == 0.3
+            line.left == view.left + 18
+            line.right == view.right - 18
+        }
+        constrain(view, headerView) { view, header in
+            header.left == view.left + 18
+            header.right == view.right - 18
             header.top == view.top + 10
             header.height == 20
         }
@@ -71,16 +84,9 @@ extension HomeContentViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! HomeCollectionViewCell
+        let cellViewModel = viewModel.getPopularCellViewModel(at: indexPath)
         return cell
-    }
-}
-
-extension HomeContentViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (self.view.frame.size.width - 50)/4 - 8
-        let height = width + 12
-        return CGSize(width: width, height: height)
     }
 }
 

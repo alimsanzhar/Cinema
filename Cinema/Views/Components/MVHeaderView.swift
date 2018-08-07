@@ -55,7 +55,6 @@ class MVHeaderView: UIView {
         constrain(self, button) { view, button in
             button.right == view.right
             button.top == view.top
-            button.width == 60
             button.height == 20
         }
     }
