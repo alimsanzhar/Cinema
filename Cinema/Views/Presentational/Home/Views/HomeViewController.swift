@@ -30,13 +30,12 @@ class HomeViewController: UIViewController {
                 }
             }
         }
-        //        viewModel.reloadTableViewClosure = { [weak self] in
-        //            DispatchQueue.main.async {
-        self.render(self.viewModel)
-        //                self?.render((self?.viewModel)!)
-        //            }
-        //        }
-        //        viewModel.loadMovies()
+        viewModel.reloadTableViewClosure = { [weak self] in
+            DispatchQueue.main.async {
+                self?.render((self?.viewModel)!)
+            }
+        }
+        viewModel.loadMovies()
     }
     
     private func render(_ viewModel: HomeViewModel) {
