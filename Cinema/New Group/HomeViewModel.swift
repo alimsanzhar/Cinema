@@ -64,7 +64,6 @@ class HomeViewModel {
             guard let path = movie.posterPath else {
                 return
             }
-            print("\(Constants.Links.imagePath)\(String(describing: path))")
             posters.append(MoviePoster(imagePath: "\(Constants.Links.imagePath)\(String(describing: path))"))
         }
         self.moviePosters = posters
