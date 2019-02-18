@@ -11,9 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
     private lazy var stateViewController = ContentStateViewController()
     
-    lazy var viewModel: HomeViewModel = {
-        return HomeViewModel()
-    }()
+    var viewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

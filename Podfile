@@ -12,6 +12,9 @@ target 'Cinema' do
   pod 'RealmSwift'
   pod 'SwiftLint'
   pod 'Kingfisher'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
 
   target 'CinemaTests' do
     inherit! :search_paths

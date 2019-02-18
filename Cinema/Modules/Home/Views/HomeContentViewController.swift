@@ -13,13 +13,10 @@ import Kingfisher
 class HomeContentViewController: UIViewController, Nameable {
     var viewModel: HomeViewModel!
     
-    private lazy var separatorLine: MVSeparatorLine = {
-        let line = MVSeparatorLine()
-        return line
-    }()
+    private lazy var separatorLine = SeparatorLine()
     
-    private lazy var headerView: MVHeaderView = {
-        let view = MVHeaderView(labelTitle: Constants.Browse.categoryTitle, buttonTitle: Constants.Browse.seeAll)
+    private lazy var headerView: HeaderView = {
+        let view = HeaderView(labelTitle: Constants.Browse.categoryTitle, buttonTitle: Constants.Browse.seeAll)
         view.button.delegate = self
         return view
     }()
@@ -31,8 +28,8 @@ class HomeContentViewController: UIViewController, Nameable {
         return layout
     }()
     
-    private lazy var collectionView: MVCollectionView = {
-        let collectionView = MVCollectionView(frame: .zero, collectionViewLayout: flowLayout)
+    private lazy var collectionView: CollectionView = {
+        let collectionView = CollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
         collectionView.delegate = self
         collectionView.dataSource = self

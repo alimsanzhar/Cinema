@@ -9,7 +9,7 @@
 import UIKit
 import Cartography
 
-class MVSeparatorLine: UIView {
+class SeparatorLine: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

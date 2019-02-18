@@ -16,14 +16,6 @@ class HomeViewModel {
     
     var networkManager: NetworkManager!
     
-    private var popularMovies: [Movie] = [Movie]()
-    
-    private var moviePosters: [MoviePoster] = [MoviePoster]() {
-        didSet {
-            self.reloadTableViewClosure?()
-        }
-    }
-    
     var isLoading: Bool = false {
         didSet {
             self.updateLoadingStatus?()
@@ -37,9 +29,18 @@ class HomeViewModel {
     var numberOfCells: Int {
         return moviePosters.count
     }
+    
     var reloadTableViewClosure: (() -> Void)?
     var showAlertClosure: (() -> Void)?
     var updateLoadingStatus: (() -> Void)?
+    
+    private var popularMovies: [Movie] = [Movie]()
+    
+    private var moviePosters: [MoviePoster] = [MoviePoster]() {
+        didSet {
+            self.reloadTableViewClosure?()
+        }
+    }
     
     init(networkManager: NetworkManager = NetworkManager()) {
         self.networkManager = networkManager

@@ -8,15 +8,13 @@
 
 import UIKit
 
-class MVSecondaryButton: UIButton {
+class SecondaryButton: UIButton {
     
     weak var delegate: Pressable?
     
-    convenience init(with font: UIFont, textColor: UIColor ) {
+    convenience init() {
         self.init(type: .system)
-        self.titleLabel?.font = font
-        self.setTitleColor(textColor, for: .normal)
-        self.addTarget(self, action: #selector(didPress), for: .touchUpInside)
+        commonInit()
     }
     
     override init(frame: CGRect) {
@@ -27,8 +25,14 @@ class MVSecondaryButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func didPress() {
+    @objc
+    func didPress() {
         delegate?.buttonDidPress(self)
     }
     
+    private func commonInit() {
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        self.setTitleColor(.secondary, for: .normal)
+        self.addTarget(self, action: #selector(didPress), for: .touchUpInside)
+    }
 }

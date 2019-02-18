@@ -20,12 +20,12 @@
 		04164C50211181150060E451 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C4F211181150060E451 /* ErrorViewController.swift */; };
 		04164C52211181600060E451 /* HomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C51211181600060E451 /* HomeContentViewController.swift */; };
 		04164C562111908F0060E451 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04164C552111908F0060E451 /* Movie.swift */; };
-		042704F92118143A0080E57A /* MVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704F82118143A0080E57A /* MVLabel.swift */; };
+		042704F92118143A0080E57A /* SectionTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704F82118143A0080E57A /* SectionTitleLabel.swift */; };
 		042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FA211815DF0080E57A /* UIFont+Custom.swift */; };
-		042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FC211844160080E57A /* MVSecondaryButton.swift */; };
-		042704FF211847190080E57A /* MVHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FE211847190080E57A /* MVHeaderView.swift */; };
-		042705012118C4490080E57A /* MVSeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042705002118C4490080E57A /* MVSeparatorLine.swift */; };
-		042705032118CDC20080E57A /* MVCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042705022118CDC20080E57A /* MVCollectionView.swift */; };
+		042704FD211844160080E57A /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FC211844160080E57A /* SecondaryButton.swift */; };
+		042704FF211847190080E57A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042704FE211847190080E57A /* HeaderView.swift */; };
+		042705012118C4490080E57A /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042705002118C4490080E57A /* SeparatorLine.swift */; };
+		042705032118CDC20080E57A /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042705022118CDC20080E57A /* CollectionView.swift */; };
 		04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1B7211210A300B9838F /* HomeViewModel.swift */; };
 		04E7C1BC2112C2F100B9838F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */; };
 		0D49C084211197AE00BFBB78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49C083211197AE00BFBB78 /* TabBarController.swift */; };
@@ -90,12 +90,12 @@
 		04164C4F211181150060E451 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		04164C51211181600060E451 /* HomeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		04164C552111908F0060E451 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		042704F82118143A0080E57A /* MVLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLabel.swift; sourceTree = "<group>"; };
+		042704F82118143A0080E57A /* SectionTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleLabel.swift; sourceTree = "<group>"; };
 		042704FA211815DF0080E57A /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
-		042704FC211844160080E57A /* MVSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSecondaryButton.swift; sourceTree = "<group>"; };
-		042704FE211847190080E57A /* MVHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHeaderView.swift; sourceTree = "<group>"; };
-		042705002118C4490080E57A /* MVSeparatorLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSeparatorLine.swift; sourceTree = "<group>"; };
-		042705022118CDC20080E57A /* MVCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCollectionView.swift; sourceTree = "<group>"; };
+		042704FC211844160080E57A /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		042704FE211847190080E57A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		042705002118C4490080E57A /* SeparatorLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorLine.swift; sourceTree = "<group>"; };
+		042705022118CDC20080E57A /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		04E7C1B7211210A300B9838F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D49C083211197AE00BFBB78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -184,9 +184,9 @@
 			children = (
 				040961B021105C0400566954 /* AppDelegate.swift */,
 				0DF1DC5A2119652400AC1981 /* Managers */,
-				04E7C1B62112107D00B9838F /* ViewModels */,
 				04164C542111907E0060E451 /* Models */,
-				040961DF21105C7F00566954 /* Views */,
+				040961DF21105C7F00566954 /* Modules */,
+				042704F7211813580080E57A /* Components */,
 				04164C53211183510060E451 /* Extensions */,
 				040961E1211060A900566954 /* Utilities */,
 				040961DE21105C4800566954 /* Supporting Files */,
@@ -222,15 +222,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		040961DF21105C7F00566954 /* Views */ = {
+		040961DF21105C7F00566954 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0D49C08721119D0500BFBB78 /* Home */,
+				0D49C08821119D1400BFBB78 /* List */,
+				0D49C08B21119D6700BFBB78 /* Settings */,
 				04164C4C211180730060E451 /* States */,
-				0427050521196DDB0080E57A /* Presentational */,
-				0D49C082211197A100BFBB78 /* Root */,
-				042704F7211813580080E57A /* Components */,
+				0D49C082211197A100BFBB78 /* Tabbar */,
 			);
-			path = Views;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		040961E1211060A900566954 /* Utilities */ = {
@@ -276,64 +277,38 @@
 		042704F7211813580080E57A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				042704F82118143A0080E57A /* MVLabel.swift */,
-				042704FC211844160080E57A /* MVSecondaryButton.swift */,
-				042704FE211847190080E57A /* MVHeaderView.swift */,
-				042705002118C4490080E57A /* MVSeparatorLine.swift */,
-				042705022118CDC20080E57A /* MVCollectionView.swift */,
+				042704F82118143A0080E57A /* SectionTitleLabel.swift */,
+				042704FC211844160080E57A /* SecondaryButton.swift */,
+				042704FE211847190080E57A /* HeaderView.swift */,
+				042705002118C4490080E57A /* SeparatorLine.swift */,
+				042705022118CDC20080E57A /* CollectionView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		0427050521196DDB0080E57A /* Presentational */ = {
-			isa = PBXGroup;
-			children = (
-				0D49C08721119D0500BFBB78 /* Home */,
-				0D49C08821119D1400BFBB78 /* List */,
-				0D49C08B21119D6700BFBB78 /* Settings */,
-			);
-			path = Presentational;
-			sourceTree = "<group>";
-		};
-		04E7C1B62112107D00B9838F /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				04E7C1B7211210A300B9838F /* HomeViewModel.swift */,
-			);
-			name = ViewModels;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		04E7C1B92112C26B00B9838F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0D914C3F21197E4700B6CC1B /* HomeViewController.swift */,
 				04164C51211181600060E451 /* HomeContentViewController.swift */,
+				04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		04E7C1BA2112C2B300B9838F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				04E7C1BB2112C2F100B9838F /* HomeCollectionViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		0D49C082211197A100BFBB78 /* Root */ = {
+		0D49C082211197A100BFBB78 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
 				0D49C083211197AE00BFBB78 /* TabBarController.swift */,
 			);
-			path = Root;
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		0D49C08721119D0500BFBB78 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0D914C3F21197E4700B6CC1B /* HomeViewController.swift */,
+				04E7C1B7211210A300B9838F /* HomeViewModel.swift */,
 				04E7C1B92112C26B00B9838F /* Views */,
-				04E7C1BA2112C2B300B9838F /* Cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -607,19 +582,29 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cinema/Pods-Cinema-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -669,10 +654,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042704FD211844160080E57A /* MVSecondaryButton.swift in Sources */,
+				042704FD211844160080E57A /* SecondaryButton.swift in Sources */,
 				042704FB211815DF0080E57A /* UIFont+Custom.swift in Sources */,
 				04E7C1B8211210A300B9838F /* HomeViewModel.swift in Sources */,
-				042705012118C4490080E57A /* MVSeparatorLine.swift in Sources */,
+				042705012118C4490080E57A /* SeparatorLine.swift in Sources */,
 				0DE19A912118C3E400422B44 /* URLParameterEncoder.swift in Sources */,
 				0DE19A972118C7A000422B44 /* Router.swift in Sources */,
 				0D914C4021197E4700B6CC1B /* HomeViewController.swift in Sources */,
@@ -694,17 +679,17 @@
 				0DE19A952118C67D00422B44 /* NetworkRouter.swift in Sources */,
 				0D49C0932111AD0100BFBB78 /* UIViewController+BackgroundColor.swift in Sources */,
 				0D49C08F2111AA8C00BFBB78 /* UIColor+Palette.swift in Sources */,
-				042704FF211847190080E57A /* MVHeaderView.swift in Sources */,
+				042704FF211847190080E57A /* HeaderView.swift in Sources */,
 				0DE19A8F2118C2AC00422B44 /* ParameterEncoding.swift in Sources */,
 				0DE19A8C2118C21F00422B44 /* HTTPTask.swift in Sources */,
-				042704F92118143A0080E57A /* MVLabel.swift in Sources */,
+				042704F92118143A0080E57A /* SectionTitleLabel.swift in Sources */,
 				040961B121105C0400566954 /* AppDelegate.swift in Sources */,
 				0D49C08D21119D7D00BFBB78 /* SettingsViewController.swift in Sources */,
 				0DE19AA12118D53100422B44 /* NetworkResponse.swift in Sources */,
 				04164C50211181150060E451 /* ErrorViewController.swift in Sources */,
 				040961E3211060C800566954 /* Constants.swift in Sources */,
 				0D49C08A21119D3600BFBB78 /* ListViewController.swift in Sources */,
-				042705032118CDC20080E57A /* MVCollectionView.swift in Sources */,
+				042705032118CDC20080E57A /* CollectionView.swift in Sources */,
 				040961E52110612600566954 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
