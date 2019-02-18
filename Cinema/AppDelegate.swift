@@ -28,12 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
-        UIApplication.shared.statusBarStyle = .lightContent
-    }
-
-    // MARK: - Status Bar Setup
-    fileprivate func configureStatusBar() {
-        UIApplication.shared.statusBarStyle = .lightContent
     }
     
     // MARK: - Injection Setup
